@@ -1,4 +1,4 @@
-from math import trunc, floor, ceil
+from math import trunc, floor, ceil, copysign
 
 # Float -> Integer ... data loss
 # different ways to configure data loss
@@ -67,3 +67,11 @@ print(round(1.35, 1))  # away from 0    --> 1.3 (odd)  < 1.35 < 1.4 (even)
 print(round(-1.25, 1))  # towards 0     --> -1.3(odd)  < -1.25 < -1.2 (even)
 print(round(15, -1))
 print(round(25, -1))
+
+
+def _round(x):
+	return int(x + 0.5 * copysign(1, x))
+
+
+print(round(1.5), _round(1.5))
+print(round(2.5), _round(2.5))
