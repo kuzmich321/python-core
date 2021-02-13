@@ -45,6 +45,7 @@
             <ol>
                 <li>decimals</li>
                 <li>constructors_and_contexts</li>
+                <li>operations</li>
             </ol>
         </li>
         </ul>
