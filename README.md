@@ -46,6 +46,7 @@
                 <li>decimals</li>
                 <li>constructors_and_contexts</li>
                 <li>operations</li>
+                <li>performance</li>
             </ol>
         </li>
         </ul>
