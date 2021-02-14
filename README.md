@@ -56,6 +56,7 @@
     booleans
     <ul>
         <li>booleans</li>
+        <li>truth_values</li>
     </ul>
     </li>
 </ol>
