@@ -52,4 +52,10 @@
         <li>complex_numbers</li>
         </ul>
     </li>
+    <li>
+    booleans
+    <ul>
+        <li>booleans</li>
+    </ul>
+    </li>
 </ol>
