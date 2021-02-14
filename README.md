@@ -57,6 +57,7 @@
     <ul>
         <li>booleans</li>
         <li>truth_values</li>
+        <li>precedence_and_short_circuiting</li>
     </ul>
     </li>
 </ol>
