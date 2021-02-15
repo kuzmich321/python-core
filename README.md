@@ -59,6 +59,7 @@
         <li>truth_values</li>
         <li>precedence_and_short_circuiting</li>
         <li>operators</li>
+        <li>comparison_operators</li>
     </ul>
     </li>
 </ol>
