@@ -67,6 +67,7 @@
         <ul>
         <li>argument_vs_parameter</li>
         <li>positional_and_keyword_arguments</li>
+        <li>unpacking_iterables</li>
         </ul>
     </li>
 </ol>
