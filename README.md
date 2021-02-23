@@ -71,6 +71,7 @@
         <li>extended_unpacking</li>
         <li>args</li>
         <li>keyword_arguments</li>
+        <li>kwargs</li>
         </ul>
     </li>
 </ol>
