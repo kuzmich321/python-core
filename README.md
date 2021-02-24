@@ -74,6 +74,7 @@
         <li>kwargs</li>
         <li>putting_it_all_together</li>
         <li>timer_application</li>
+        <li>parameter_defaults_beware</li>
         </ul>
     </li>
 </ol>
