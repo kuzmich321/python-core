@@ -77,4 +77,10 @@
         <li>parameter_defaults_beware</li>
         </ul>
     </li>
+    <li>
+    functions
+        <ul>
+        <li>first_class_objects_and_higher_order_functions</li>
+        </ul>
+    </li>
 </ol>
