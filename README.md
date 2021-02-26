@@ -81,6 +81,7 @@
     functions
         <ul>
         <li>first_class_objects_and_higher_order_functions</li>
+        <li>docstrings_and_annotations</li>
         </ul>
     </li>
 </ol>
