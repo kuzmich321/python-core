@@ -82,6 +82,7 @@
         <ul>
         <li>first_class_objects_and_higher_order_functions</li>
         <li>docstrings_and_annotations</li>
+        <li>lambda_expressions</li>
         </ul>
     </li>
 </ol>
