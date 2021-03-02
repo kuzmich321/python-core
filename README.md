@@ -84,6 +84,7 @@
         <li>docstrings_and_annotations</li>
         <li>lambda_expressions</li>
         <li>function_introspection</li>
+        <li>callables</li>
         </ul>
     </li>
 </ol>
