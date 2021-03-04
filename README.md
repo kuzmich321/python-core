@@ -86,6 +86,7 @@
         <li>function_introspection</li>
         <li>callables</li>
         <li>map_filter_zip_and_list_comprehensions</li>
+        <li>reducing_functions</li>
         </ul>
     </li>
 </ol>
