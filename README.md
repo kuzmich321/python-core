@@ -91,4 +91,10 @@
         <li>operator_module</li>
         </ul>
     </li>
+    <li>
+    scopes
+        <ul>
+        <li>global_and_local</li>
+        </ul>
+    </li>
 </ol>
