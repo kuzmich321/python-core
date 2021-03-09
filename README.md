@@ -96,6 +96,7 @@
         <ul>
         <li>global_and_local</li>
         <li>nonlocal</li>
+        <li>closures</li>
         </ul>
     </li>
 </ol>
