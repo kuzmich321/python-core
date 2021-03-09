@@ -95,6 +95,7 @@
     scopes
         <ul>
         <li>global_and_local</li>
+        <li>nonlocal</li>
         </ul>
     </li>
 </ol>
