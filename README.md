@@ -97,6 +97,7 @@
         <li>global_and_local</li>
         <li>nonlocal</li>
         <li>closures</li>
+        <li>closure_apps (examples)</li>
         </ul>
     </li>
 </ol>
