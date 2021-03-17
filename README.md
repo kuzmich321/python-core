@@ -106,6 +106,7 @@
         <li>decorators</li>
         <li>decorator_app_timer</li>
         <li>decorator_app_logger</li>
+        <li>decorator_app_memoization</li>
         </ul>
     </li>
 </ol>
