@@ -109,6 +109,7 @@
         <li>decorator_app_memoization</li>
         <li>decorator_parameters (decorator_factory)</li>
         <li>decorator_app_decorator_class</li>
+        <li>decorator_app_dispatching</li>
         </ul>
     </li>
 </ol>
