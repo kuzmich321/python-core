@@ -2,6 +2,7 @@ from decimal import Decimal
 from html import escape
 from numbers import Integral
 from collections.abc import Sequence
+from functools import singledispatch
 
 
 def html_escape(arg):
@@ -160,7 +161,91 @@ def htmlize(a):
 # print(htmlize(10))  # It fails
 #
 #
-# @htmlize.reigster(Sequence)
+# @htmlize.register(Sequence)
 # def html_sequence(l):
 # 	items = (f'<li>{html_escape(item)}</li>' for item in l)
 # 	return '<ul>\n' + '\n'.join(items) + '\n</ul>'
+
+
+@singledispatch
+def htmlize(a):
+	return escape(str(a))
+
+
+print(htmlize.registry)
+print(htmlize.dispatch(str))
+
+
+@htmlize.register(Integral)
+def htmlize_integral_number(a):
+	return f'{a}(<i>{str(hex(a))}</i>)'
+
+
+print(htmlize.registry)
+print(htmlize.dispatch(int))
+
+print(isinstance(10, int))
+print(isinstance(10, Integral))
+print(isinstance(True, Integral))
+
+print(htmlize.dispatch(bool))
+
+print(htmlize(10))
+print('--------------')
+
+
+@htmlize.register(Sequence)
+def html_sequence(l):
+	items = (f'<li>{html_escape(item)}</li>' for item in l)
+	return '<ul>\n' + '\n'.join(items) + '\n</ul>'
+
+
+print(html_sequence((10, 20, 30)))
+print(html_sequence('python'))
+print('--------------')
+
+
+@htmlize.register(str)
+def html_str(s):
+	return html_escape(s).replace('\n', '<br/>\n')
+
+
+print(htmlize("""Python
+rocks!
+"""))
+
+
+@htmlize.register(tuple)
+def html_tuple(t):
+	items = (escape(str(item)) for item in t)
+	return '({0})'.format(', '.join(items))
+
+
+print(htmlize.registry)
+print(htmlize((1, 2, 3)))
+print('--------------')
+
+
+@singledispatch
+def htmlize(a):
+	return escape(str(a))
+
+
+@htmlize.register(Integral)
+def _(a):
+	return f'{a}(<i>{str(hex(a))}</i>)'
+
+
+@htmlize.register(Sequence)
+def _(l):
+	items = (f'<li>{html_escape(item)}</li>' for item in l)
+	return '<ul>\n' + '\n'.join(items) + '\n</ul>'
+
+
+@htmlize.register(str)
+def _(s):
+	return html_escape(s).replace('\n', '<br/>\n')
+
+
+print(htmlize.dispatch(Integral))
+print(htmlize.dispatch(str))
