@@ -116,6 +116,7 @@
     tuples
         <ul>
         <li>tuples_as_data_structure</li>
+        <li>named_tuples</li>
         </ul>
     </li>
 </ol>
