@@ -39,3 +39,52 @@ print(Person._fields)
 # _asdict()
 
 print(andrey._asdict())
+print('-----------------------')
+
+print(isinstance(andrey, tuple))
+
+andrey2 = Person('Andrey', '23', 'asd')
+print(andrey is andrey2, andrey == andrey2)
+
+print(max(pt))
+
+
+def dot_product_3d(a, b):
+	return a.x * b.x + a.y * b.y + a.z * b.z
+
+
+a = (1, 2)
+b = (1, 1)
+print(list(zip(a, b)))
+print(sum(e[0] * e[1] for e in zip(a, b)))
+
+
+def dot_product(a, b):
+	return sum(e[0] * e[1] for e in zip(a, b))
+
+
+pt1 = Point2D(1, 2)
+pt2 = Point2D(1, 1)
+print(dot_product(pt1, pt2))
+print('-----------------------')
+
+Vector3D = namedtuple('Vector3D', 'x y z')
+v1 = Vector3D(1, 2, 3)
+v2 = Vector3D(1, 1, 1)
+
+print(dot_product(v1, v2))
+print(tuple(v1), v1[0], v1[0:2])
+
+Circle = namedtuple('Circle', 'center_x center_y radius')
+c = Circle(0, 0, 10)
+print(c.radius)
+print('-----------------------')
+
+Stock = namedtuple('Stock', 'symbol year month day open high low close')
+stock = Stock('DJIA', 2021, 1, 25, 26_313, 26_322, 26_410, 26_393)
+print(stock)
+for item in stock:
+	print(item)
+
+symbol, year, month, day, *_, close = stock
+print(symbol, year, month, day, close)
