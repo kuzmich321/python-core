@@ -119,6 +119,7 @@
         <li>named_tuples</li>
         <li>named_tuples_modifying_and_extending</li>
         <li>named_tuples_docstrings_and_default_values</li>
+        <li>named_tuples_app_returning_multiple_values</li>
         </ul>
     </li>
 </ol>
