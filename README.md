@@ -129,6 +129,7 @@
         <li>what_is_module</li>
         <li>importing_modules</li>
         <li>imports_and_importlib</li>
+        <li>import_variants_and_misconceptions</li>
         </ul>
     </li>
 </ol>
