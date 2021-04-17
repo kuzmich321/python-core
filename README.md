@@ -131,6 +131,7 @@
         <li>imports_and_importlib</li>
         <li>import_variants_and_misconceptions</li>
         <li>reloading_modules + test.py</li>
+        <li>main_usage</li>
         </ul>
     </li>
 </ol>
