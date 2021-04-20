@@ -138,6 +138,7 @@
     packages
         <ul>
         <li>what_is_package</li>
+        <li>why_packages</li>
         </ul>
     </li>
 </ol>
