@@ -140,6 +140,7 @@
         <li>what_is_package</li>
         <li>why_packages</li>
         <li>structuring_packages</li>
+        <li>namespace_packages</li>
         </ul>
     </li>
 </ol>
