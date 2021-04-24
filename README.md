@@ -147,6 +147,7 @@
     extras
         <ul>
         <li>dictionary_ordering</li>
+        <li>preserved_order_of_kwargs</li>
         </ul>
     </li>
 </ol>
